@@ -1,0 +1,145 @@
+.c-page {
+    text-align: center;
+    padding: 70px 0 30px;
+    @include break($tb) {
+        padding: 105px 0 30px;
+    }
+}
+
+//     &__sp {
+//         padding: 70px 0 30px;
+//         display: flex;
+//         justify-content: space-between;
+//         a {
+//             color: $main-color;
+//             text-decoration: none;
+//         }
+//         i {
+//             padding: 0 5px;
+//             color: $main-color;
+//         }
+//         @include break($tb) {
+//             display: none;
+//         }
+//     }
+//     &__tb {
+//         display: none;
+//         padding: 105px 0 30px;
+//         justify-content: center;
+//         align-items: center;
+//         @include break($pc) {
+//             padding: 150px 0 64px;
+//         }
+//         p {
+//             font-family: 'Roboto', sans-serif;
+//             font-weight: bold;
+//             color: $main-color;
+//             margin-right: 20px;
+//         }
+//         a {
+//             font-family: 'Roboto', sans-serif;
+//             font-weight: bold;
+//             color: $main-color;
+//             text-decoration: none;
+//             width: 35px;
+//             height: 35px;
+//             text-align: center;
+//             line-height: 33px;
+//             border: 1px solid #707070;
+//             margin-right: 15px;
+//             i {
+//                 color: $main-color;
+//             }
+//         }
+//         a:first-of-type,
+//          :last-of-type {
+//             border: none;
+//         }
+//         a:nth-of-type(2) {
+//             color: #ffffff;
+//             background-color: #3C2B1C;
+//         }
+//         @include break($tb) {
+//             display: flex;
+//         }
+//     }
+// }
+.wp-pagenavi {
+    display: flex;
+    justify-content: space-between;
+    @include break($tb) {
+        justify-content: center;
+    }
+    span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: $main-color;
+        border: none;
+        @include break($tb) {
+            margin-right: 20px;
+        }
+    }
+    span.pages,
+    span.extend,
+    a.first,
+    a.last {
+        display: none;
+        @include break($tb) {
+            display: inline-block;
+        }
+    }
+    span.page-sp {
+        @include break($tb) {
+            display: none;
+        }
+    }
+    a {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: $main-color;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #707070;
+        margin-right: 15px;
+    }
+    a.page {
+        display: none;
+        @include break($tb) {
+            display: inline-block;
+        }
+    }
+    a.previouspostslink,
+    a.nextpostslink,
+    a.first,
+    a.last {
+        width: inherit;
+        height: inherit;
+        border: none;
+    }
+    a.nextpostslink {
+        margin-left: auto;
+        margin-right: 0;
+        @include break($tb) {
+            margin-left: inherit;
+        }
+    }
+    .current {
+        display: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #707070;
+        margin-right: 15px;
+        color: #ffffff;
+        background-color: #3C2B1C;
+        @include break($tb) {
+            display: inline-block;
+        }
+    }
+}

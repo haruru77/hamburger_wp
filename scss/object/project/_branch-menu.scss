@@ -1,0 +1,142 @@
+            .p-main-img {
+                height: 285px;
+                width: auto;
+                background-image: url(../img/top_bg.png);
+                background-position: center;
+                background-size: cover;
+                @include break($pc) {
+                    height: 530px;
+                }
+                h2 {
+                    font-size: 2.25em;
+                    color: #ffffff;
+                    line-height: 285px;
+                    padding-left: 30px;
+                    @include break($tb) {
+                        padding-left: 86px;
+                    }
+                    @include break($pc) {
+                        line-height: 530px;
+                    }
+                }
+            }
+            
+            .branch-menu {
+                &__contents {
+                    @include break($tb) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &__heading {
+                        margin: 20px;
+                        position: relative;
+                        width: 100%;
+                        a {
+                            display: inline-block;
+                            text-decoration: none;
+                            background-size: cover;
+                            min-height: 642px;
+                            width: 100%;
+                            @include break($pc) {
+                                min-height: 1193px;
+                            }
+                        }
+                        @include break($tb) {
+                            margin: 40px 20px;
+                        }
+                        @include break($pc) {
+                            margin: 120px 40px;
+                        }
+                        &:first-of-type {
+                            @include break($tb) {
+                                margin-right: 0;
+                            }
+                        }
+                        h3 {
+                            font-family: "Roboto", sans-serif;
+                            color: #ffffff;
+                            font-weight: bold;
+                            font-size: 2.5rem;
+                            padding: 15px 10px 10px;
+                            @include break($pc) {
+                                font-size: 5rem;
+                            }
+                        }
+                        span {
+                            margin-left: 10px;
+                            display: inline-block;
+                            width: 34px;
+                            height: 4px;
+                            background-color: #ffffff;
+                        }
+                        &__desc {
+                            position: absolute;
+                            bottom: 0;
+                            dl {
+                                color: $description-color;
+                                min-height: 163px;
+                                background-color: rgba(255, 255, 255, 0.8);
+                                margin: 10px;
+                                @include break($pc) {
+                                    margin: 20px;
+                                }
+                                dt {
+                                    font-size: 1.25rem;
+                                    font-weight: bold;
+                                    padding: 20px 11px;
+                                }
+                                dd {
+                                    padding: 0 10px;
+                                }
+                            }
+                        }
+                        &:first-of-type a {
+                            background-image: url(../img/branch_cts01.png);
+                        }
+                        &:last-of-type a {
+                            background-image: url(../img/branch_cts02.png);
+                        }
+                        // &__contents__takeout a {
+                        //     display: inline-block;
+                        //     text-decoration: none;
+                        //     background-image: url(../img/branch_cts01.png);
+                        //     background-size: cover;
+                        //     margin: 20px;
+                        //     min-height: 642px;
+                        //     position: relative;
+                        //     &__desc {
+                        //         position: absolute;
+                        //         bottom: 0;
+                        //     }
+                        //     @include break($tb) {
+                        //         width: 100%;
+                        //         margin: 40px 20px 40px 40px;
+                        //     }
+                        //     @include break($pc) {
+                        //         min-height: 1193px;
+                        //         margin: 120px 40px 120px 110px;
+                        //     }
+                        // }
+                        // &__contents__eatin a {
+                        //     display: inline-block;
+                        //     background-image: url(../img/branch_cts02.png);
+                        //     background-size: cover;
+                        //     margin: 20px;
+                        //     min-height: 642px;
+                        //     position: relative;
+                        //     &__desc {
+                        //         position: absolute;
+                        //         bottom: 0;
+                        //     }
+                        //     @include break($tb) {
+                        //         width: 100%;
+                        //         margin: 40px 40px 40px 20px;
+                        //     }
+                        //     @include break($pc) {
+                        //         min-height: 1193px;
+                        //         margin: 120px 110px 120px 40px;
+                        //     }
+                        // }
+                    }
+                }
+            }

@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body.is-open {
+    position: fixed;
+}
+
+a:hover,
+a:hover * {
+    opacity: 0.7;
+}
+
+.all-wrapper {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    @include break($pc) {
+        display: grid;
+        grid-template-areas: "header sidebar" "main sidebar" "footer footer";
+        grid-template-rows: 217px auto 150px;
+        grid-template-columns: auto 20%;
+        .l-header {
+            grid-area: header;
+        }
+        .l-main-contents {
+            grid-area: main;
+        }
+        .l-sidebar {
+            grid-area: sidebar;
+        }
+        .l-footer {
+            grid-area: footer;
+        }
+    }
+}
+
+.l-header {
+    height: 217px;
+    background-color: #fff7ef;
+}

@@ -1,0 +1,79 @@
+.p-header {
+    &__top {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        @include break($pc) {
+            flex-direction: initial;
+            justify-content: space-between;
+        }
+        h1 {
+            a {
+                color: $main-color;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 2.5rem;
+                padding-top: 40px;
+                text-decoration: none;
+                @include break($pc) {
+                    font-size: 4rem;
+                    padding-top: 0;
+                    padding-left: 65px;
+                    line-height: 217px;
+                }
+            }
+        }
+    }
+}
+
+.p-search-form {
+    padding: 38px 0;
+    @include break($tb) {
+        width: 65%;
+        margin: 0 auto;
+    }
+    @include break($pc) {
+        width: 546px;
+        padding: 0;
+        margin: auto 0;
+    }
+    input {
+        height: 46px;
+        border-radius: 10px;
+        &[type=text] {
+            width: 60%;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            padding-left: 5px;
+            border: 1px solid $main-color;
+        }
+        &[type=submit] {
+            width: 30%;
+            background-color: #F2EDE9;
+            color: $main-color;
+            cursor: pointer;
+            box-shadow: 0px 5px #5a5754;
+            &:active {
+                /*影をけす*/
+                box-shadow: none;
+                /*ボタンを下に移動させる＝ボタンがクリックされたように見える*/
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+}
+
+.p-header__menu {
+    font-family: 'Roboto', sans-serif;
+    color: $main-color;
+    font-size: 5vw;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    z-index: 100;
+    @include break($pc) {
+        display: none;
+    }
+}

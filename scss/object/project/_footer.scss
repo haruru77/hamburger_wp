@@ -1,0 +1,23 @@
+.p-footer {
+    &__menu {
+        font-size: 1.25rem;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            color: #ffffff;
+            margin-top: 40px;
+            padding: 0 5px;
+        }
+        li+li {
+            border-left: 2px solid #ffffff;
+        }
+    }
+}
+
+.copyright {
+    font-size: 0.875rem;
+    margin-top: 35px;
+    color: #ffffff;
+    font-style: normal;
+}

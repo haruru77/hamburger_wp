@@ -1,0 +1,62 @@
+.p-access {
+    position: relative;
+    &__desc {
+        height: 415px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        position: absolute;
+        z-index: 10;
+        @include break($pc) {
+            height: 649px;
+            width: 60%;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 1.875rem;
+            margin: 40px 42px 0 42px;
+            @include break($pc) {
+                margin: 89px 0 0 120px;
+            }
+        }
+        p {
+            color: #ffffff;
+            font-size: 0.875rem;
+            margin: 0 40px;
+            line-height: 2;
+            @include break($pc) {
+                margin: 0 120px;
+            }
+        }
+        span {
+            margin: 20px 42px;
+            display: inline-block;
+            width: 75px;
+            height: 2px;
+            background-color: #ffffff;
+            @include break($pc) {
+                margin: 60px 120px;
+            }
+        }
+    }
+    &__map {
+        height: 690px;
+        background-image: url(../img/map.png);
+        background-size: cover;
+        position: relative;
+        @include break($tb) {
+            height: 415px;
+        }
+        @include break($pc) {
+            height: 649px;
+        }
+    }
+    &__map::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
