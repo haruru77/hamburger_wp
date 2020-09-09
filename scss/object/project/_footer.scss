@@ -15,6 +15,21 @@
     }
 }
 
+#menu-footermenu {
+    padding-top: 40px;
+    font-size: 1.25rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li a {
+        color: #ffffff;
+        padding: 0 5px;
+    }
+    li+li {
+        border-left: 2px solid #ffffff;
+    }
+}
+
 .copyright {
     font-size: 0.875rem;
     margin-top: 35px;

@@ -26,14 +26,14 @@
                         <div class="c-card__heading">
                             <h3><?php the_title(); ?></h3>
                             <div class="c-card__heading__contents">
-                            <?php the_content('続きを読む'); ?>
+                            <?php the_excerpt(); ?>
                             </div>
                             <a href="<?php the_permalink(); ?>">詳しく見る</a>
                         </div>
                     </div>
                 <?php endwhile;
             else :
-                ?><p>表示する記事がありません</p><?php endif; ?>
+                ?><p>表示する商品がありません</p><?php endif; ?>
             <!-- <div class="c-card">
                 <img src="/img/card_cheese.png" alt="チーズバーガー">
                 <div class="c-card__heading">

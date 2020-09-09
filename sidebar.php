@@ -7,7 +7,9 @@
                     <button class="u-close p-sidebar">
                         <i class="fas fa-times"></i>
                     </button>
-                    <?php wp_nav_menu(); ?>
+                    <?php wp_nav_menu(array(
+        'theme_location' => 'category_nav',
+        )); ?>
                 </div>
             </div>
         </article>

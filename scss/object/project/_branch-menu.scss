@@ -30,7 +30,6 @@
                     &__heading {
                         margin: 20px;
                         position: relative;
-                        width: 100%;
                         a {
                             display: inline-block;
                             text-decoration: none;
@@ -42,6 +41,7 @@
                             }
                         }
                         @include break($tb) {
+                            width: 100%;
                             margin: 40px 20px;
                         }
                         @include break($pc) {
