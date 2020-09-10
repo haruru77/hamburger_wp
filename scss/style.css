@@ -1247,6 +1247,33 @@ a:hover * {
   color: #ffffff;
 }
 
+.blocks-gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .blocks-gallery-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blocks-gallery-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.wp-block-gallery.columns-3 .blocks-gallery-item {
+  width: 100%;
+}
+
 .u-sidebar__pc__menu {
   font-family: "Roboto", sans-serif;
   display: none;
