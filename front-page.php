@@ -3,7 +3,7 @@
 <article class="l-main-contents">
     <div class="branch-menu">
         <div class="p-main-img">
-            <h2>ダミーサイト</h2>
+            <h2><?php bloginfo( 'description' ); ?></h2>
         </div>
         <ul class="branch-menu__contents">
             <li class="branch-menu__contents__heading">

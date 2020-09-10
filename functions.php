@@ -38,8 +38,8 @@ function custom_theme_support() {
             wp_enqueue_style( 'mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() );
             }
         wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array() );
-        wp_enqueue_style( 'mplus', 'https://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css', array() );
-        wp_enqueue_style( 'mplus', 'https://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css', array() );
+        // wp_enqueue_style( 'mplus', 'https://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css', array() );
+        // wp_enqueue_style( 'mplus', 'https://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css', array() );
         wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.14.0/css/all.css', array(), '5.14.0' );
         wp_enqueue_style( 'hamburgerwp', get_template_directory_uri() . '/scss/style.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
